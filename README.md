@@ -18,19 +18,17 @@ import { BadwordSDK } from 'badword-sdk';
 
 const sdk = new BadwordSDK({ apiKey: 'SUA_API_KEY' });
 
-async function verificarMensagem() {
+async function verifyMessage() {
   try {
     const result = await sdk.check({
-      text: "Mensagem para verificar",
+      text: "Message to verify",
     });
 
     console.log(result); // { isBadword: true }
   } catch (error) {
-    console.error('Erro ao verificar a mensagem:', error);
+    console.error('Error verifying the message: ', error);
   }
 }
-
-verificarMensagem();
 ```
 
 ---
@@ -47,7 +45,7 @@ const sdk = new BadwordSDK({ apiKey: 'SUA_API_KEY' });
 
 ---
 
-### **check({ text, tolerance })**
+### **check({ text })**
 
 Verifica se uma mensagem contém palavras ofensivas, considerando o contexto e a tolerância informada.
 
@@ -80,8 +78,7 @@ Caso ocorra um erro durante a verificação, a SDK lançará uma exceção que p
 try {
   const result = await sdk.check({ text: "Mensagem" });
   console.log(result);
-} catch (error) {
-  console.error("Erro ao verificar a mensagem:", error.message);
+  console.error("Error verifying the message: ", error.message);
 }
 ```
 
