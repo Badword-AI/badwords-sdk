@@ -1,5 +1,7 @@
 ## 🚀 **Badword SDK**
 
+https://github.com/user-attachments/assets/a7d1f79f-58fa-4494-af18-37a882160ac9
+
 Uma SDK robusta para detectar palavras ofensivas utilizando APIs inteligentes.  
 Ideal para aplicações que precisam filtrar conteúdo impróprio ou ofensivo de maneira eficiente.
 
