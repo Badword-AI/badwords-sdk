@@ -1,0 +1,22 @@
+{
+  "name": "badwords-sdk",
+  "version": "1.0.0",
+  "description": "SDK to detect offensive words using AI.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "jest"
+  },
+  "keywords": ["badwords", "sdk", "openai"],
+  "author": "yuriassuncx",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.8.4"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.11"
+  }
+}
