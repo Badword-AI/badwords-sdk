@@ -25,15 +25,6 @@ jobs:
       - name: Build
         run: npm run build
 
-      - name: Garantir um repositório limpo
-        run: |
-          git status
-          git add .
-          git commit -m "chore: commit antes de versão" || echo "Sem alterações para commitar"
-
-      - name: Incrementar a versão
-        run: npm version patch -m "Bump version to %s"  # Incrementa a versão patch automaticamente
-
       - name: Publicar no NPM
         run: npm publish
         env:
