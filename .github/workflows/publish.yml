@@ -2,8 +2,8 @@ name: 📦 Publicar no NPM
 
 on:
   push:
-    tags:
-      - 'v*' # Ex: v1.0.1
+    branches:
+      - master  # A ação será executada apenas para a branch master
 
 jobs:
   publish:
