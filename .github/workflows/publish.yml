@@ -25,6 +25,9 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Incrementar a versão
+        run: npm version patch -m "Bump version to %s"
+
       - name: Publicar no NPM
         run: npm publish
         env:
