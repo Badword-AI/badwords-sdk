@@ -1,6 +1,6 @@
 {
   "name": "badwords-sdk",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "SDK to detect offensive words using AI.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
